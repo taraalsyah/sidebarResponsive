@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+body{
+    font-family: 'Ibarra Real Nova', serif;
+    height: 150vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: fixed;
+    cursor: pointer;
+    background: #063146;
+    color: white;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    height: 25px;
+    text-align: center;
+    width: 30px;
+    font-size: 25px;
+    background: #042331;
+    transition: all 400ms;
+    
+}
+label #cancel{
+    text-align: center;
+    top: 25px;
+    left: -220px;
+    width: 25px;
+    font-size: 25px;
+    z-index: 100;
+    transition: all 400ms;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all 400ms;
+   
+}
+.sidebar header{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 210px;
+    opacity: 0;
+}
+#check:checked ~ label #cancel{
+    left: 220px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section{
+    background: url(img/image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    border-top: 2px solid #042331;
+    transition: all 400ms;
+}
