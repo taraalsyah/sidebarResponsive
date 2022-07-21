@@ -15,7 +15,6 @@ body{
 label #btn, label #cancel{
     position: fixed;
     cursor: pointer;
-    background: #063146;
     color: white;
 }
 label #btn{
@@ -25,7 +24,6 @@ label #btn{
     text-align: center;
     width: 30px;
     font-size: 25px;
-    background: #042331;
     transition: all 400ms;
     
 }
