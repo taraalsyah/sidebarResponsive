@@ -83,10 +83,12 @@ ul li:hover a{
     margin-left: 250px;
 }
 section{
-    background: url(img/image.jpg);
+    background: url(img/imagetwo.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-    border-top: 2px solid #042331;
+    border-top: 1px solid #042331;
     transition: all 400ms;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.63);
 }
