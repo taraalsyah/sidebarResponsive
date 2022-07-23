@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
 body{
     font-family: 'Ibarra Real Nova', serif;
-    height: 150vh;
+    height: 1000vh;
+    background-color: bisque;
 }
 *{
     margin: 0;
@@ -25,7 +26,7 @@ label #btn{
     width: 30px;
     font-size: 25px;
     transition: all 400ms;
-    
+    z-index: 100;
 }
 label #cancel{
     text-align: center;
@@ -64,7 +65,7 @@ label #cancel{
     box-sizing: border-box;
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
-ul li:hover a{
+.sidebar ul li:hover a{
     padding-left: 50px;
 }
 #check:checked ~ .sidebar{
@@ -80,13 +81,42 @@ ul li:hover a{
 #check:checked ~ section{
     margin-left: 250px;
 }
+#check:checked ~ .main{
+    margin-left: 250px;
+}
 section{
     background: url(img/imagetwo.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     border-top: 1px solid #042331;
     transition: all 400ms;
     box-sizing: border-box;
     box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.63);
+}
+.main{
+    position: sticky;
+    background: #063146;
+    top: 0;
+    height: 10vh;
+    transition: all 400ms;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.63);
+}
+.main .box{
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    display: flex;
+}
+.main .box ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+.main .box ul a {
+    color: aliceblue;
 }
