@@ -96,6 +96,9 @@ section{
     box-sizing: border-box;
     box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.63);
 }
+
+
+/*Tooltip*/
 .main{
     position: sticky;
     background: #063146;
@@ -148,7 +151,6 @@ span::before{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
-
 }
 .main .box li:hover span{
     opacity: 1;
